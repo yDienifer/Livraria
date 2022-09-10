@@ -6,83 +6,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Livraria</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/navbar/navbar.css">
 </head>
 <body>
-  <section>
   <header>
-    <img src="/Images/cabecalho.jpg" width="100px" title="Livros-logo" alt="livros">
-    <h1> Livraria Lorem Ipsum</h1>
+    <img src="/Images/cabecalho.jpg" width="60px" title="logo" alt="logo">
+    <h1> Livraria Lorem Ipsum </h1>
   </header>
-  <nav>
+  <div class="Destaque-Livraria">
+    <img src="/Images/destaques.jpg" width="67px" title="Livro-logo" alt="Livro-logo">
+    <h2> Destaques</h2>
+  </div>
+  <navbar>
     <ul>
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Quem somos?</a></li>
-      <li><a href="#">Promoções</a></li>
-    </ul>
+      <li> Início </li>
+      <li> Quem somos </li>
+      <li> Promoções </li>
       <li>
-        <span>Nossas filiais</span>
-        <ul id="Opcoes-Nossas-filiais">
-          <li><a href="#">Charqueadas</a></li>
-          <li><a href="#">Pelotas</a></li>
-          </ul>
-          </li>
+        <span> Nossas filiais </span>
         <ul>
-         <li><a href="#">Contato</a></li> 
+          <li> Charqueadas </li>
+          <li> Pelotas </li>
+          <li> Porto Alegre </li>
         </ul>
-  </nav>
-  <aside>
-      <h1> Top 5</h1>
-    <img src="/Images/livro1.jpg" width="105px" title="livro-copas" alt="livro">
-    <img src="/Images/livro2.jpg" width="105px" title="livro-copas" alt="livro">
-    <img src="/Images/livro3.jpg" width="105px" title="livro-copas" alt="livro">
-    <img src="/Images/livro4.jpg" width="105px" title="livro-copas" alt="livro">
-    <img src="/Images/livro5.jpg" width="105px" title="livro-copas" alt="livro">
-  </aside>
-  <div class="Destaque">
-    <img src="/Images/destaques.jpg" width="100px" title="Livro" alt="Desenho-De-livro">
-    <h1> Destaques </h1>
-    <hr/><hr/>
-  </div>
-  <div class="livros">
-  <div id="Livro-1">
-    <img src="/Images/destaque1.jpg" width="170px" title="" alt="">
-    <img id="comprar" src="/Images/comprar.jpg" width="130px">
-    <h1> As veias abertas </h1>
-    <p> R$ 99,90 </p>
-  </div>
-  <div id="Livro-2">
-    <img src="/Images/destaque2.png" width="170px" title="" alt="">
-    <img id="comprar" src="/Images/comprar.jpg" width="130px">
-    <h1> Contos Gauchescos </h1>
-    <p> R$ 49,90 </p>
-  </div>
-  <div id="Livro-3">
-    <img src="/Images/destaque3.png" width="170px" title="" alt="">
-    <img id="comprar" src="/Images/comprar.jpg" width="130px">
-    <h1> O Continente </h1>
-    <p> R$ 55,90 </p>
-  </div>
-  <div id="Livro-4">
-    <img id="destaque-4" src="/Images/destaque4.png" width="175px" title="" alt="">
-    <img id="comprar" src="/Images/comprar.jpg" width="130px">
-    <h1> 2666 </h1>
-    <p> R$ 55,90 </p>
-  <div id="Livro-5">
-    <img src="/Images/destaque5.jpg" width="170px" title="" alt="">
-    <img id="comprar" src="/Images/comprar.jpg" width="130px">
-    <h1> Minuano </h1>
-    <p> R$ 71,90 </p>
-  <div id="Livro-6">
-    <img src="/Images/destaque6.png" width="170px" title="" alt="">
-    <img id="comprar" src="/Images/comprar.jpg" width="130px">
-    <h1> Piá Farroupilha </h1>
-    <p> R$ 87,90 </p>
-  </div>  
-  </div>
-  <div class="menu">
-    <h1> Top 5</h1>
-  </div>
+      </li>
+      <li> Contato </li>
+    </ul>
+  </navbar>
+  <section>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <img src="/Images/destaque1.jpg" width="110px" class="destaque"></br>
+          <a href="#"><img src="/Images/comprar.jpg" width="70px" class="comprar"></a></br>
+        <span id="titulo-do-livro">As veias abertas</span>
+        <span id="valor-do-livro"> R$99,90</span>
+      </td>
+         <td>
+          <img src="/Images/destaque2.png" width="110px" class="destaque"></br>
+          <a href="#"><img src="/Images/comprar.jpg" width="70px" class="comprar"></a></br>
+        <span id="titulo-do-livro">Contos Gauchescos</span>
+        <span id="valor-do-livro"> R$49,90</span>
+      </td>     
+        <td>
+          <img src="/Images/destaque3.png" width="110px" class="destaque"></br>
+          <a href="#"><img src="/Images/comprar.jpg" width="70px" class="comprar"></a></br>
+          <span id="titulo-do-livro">O Continente</span>
+          <span id="valor-do-livro"> R$55,90</span>
+        </td>
+          <tr>
+        <td>
+           <img src="/Images/destaque4.png" width="110px" class="destaque4"></br>
+           <a href="#"><img src="/Images/comprar.jpg" width="70px" class="comprar"></a></br>
+           <span id="titulo-do-livro">2666</span>
+           <span id="valor-do-livro"> R$80,90</span>
+           </td>
+           <td>
+             <img src="/Images/destaque5.jpg" width="110px" class="destaque"></br>
+             <a href="#"><img src="/Images/comprar.jpg" width="70px" class="comprar"></a></br>
+             <span id="titulo-do-livro">Minuano</span>
+             <span id="valor-do-livro"> R$71,90</span>
+           </td>
+           <td>
+             <img src="/Images/destaque6.png" width="110px" class="destaque6"></br>
+             <a href="#"><img src="/Images/comprar.jpg" width="70px" class="comprar"></a></br>
+             <span id="titulo-do-livro">Piá Farroupilha</span>
+             <span id="valor-do-livro"> R$87,90</span>
+           </td>           
+          </tr>
+    </tbody>
+  </table>
   </section>
+  <aside id="menu-direito">
+    <h1> TOP 5 </h1>
+    <a href="#"><img src="/Images/livro1.jpg" width="80px" title="livro-1" alt="livro-1"></a>
+    <a href="#"><img src="/Images/livro2.jpg" width="80px" title="livro-2" alt="livro-2"></a>
+    <a href="#"><img src="/Images/livro3.jpg" width="80px" title="livro-3" alt="livro-3"></a>
+    <a href="#"><img src="/Images/livro4.jpg" width="80px" title="livro-4" alt="livro-4"></a>
+    <a href="#"><img src="/Images/livro5.jpg" width="80px" title="livro-5" alt="livro-5"></a>
+  </aside>
+  <aside id="menu-esquerdo">
+    <h1>Menu</h1>
+    <li><a href="#">Romance</a></li>
+    <li><a href="#">Aventura</a></li>
+    <li><a href="#">Ciências</a></li>
+    <li><a href="#">Religião</a></li>
+    <li><a href="#">Auto-ajuda</a></li>
+    <li><a href="#">Agropecuários</a></li>
+    <li><a href="#">Didáticos</a></li>
+    <li><a href="#">Contabilidade</a></li>
+    <li><a href="#">Direito</a></li>
+    <li><a href="#">Economia</a></li>
+    <li><a href="#">Gastronomia</a></li>
+    <li><a href="#">Medicina</a></li>
+    <li><a href="#">Informática</a></li>
+  </aside>
+  <footer>
+    <p> Livraria Cultura Charqueadense - Todos os direitos reservados</p>
+  </footer>
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+    /* Navbar - Barra de navegação */
+navbar
+{
+ position: relative;
+ top: -125px;
+ float: right;
+ margin-right: 180px;
+}
+
+navbar li
+{
+  float: left;
+  display: block;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  padding: 10px 0;
+  background: #B5A0A0;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 149px;
+  height: 16px;
+  cursor: pointer;
+}
+
+navbar li ul
+{
+  display: none;
+}
+
+navbar li:hover
+{
+  background-color: #886F6F;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+navbar li:hover ul
+{
+  display: block;
+  margin-top: 8px;
+  position: absolute;
+  z-index: 99;
+}
+
+navbar li ul li
+{
+
+  float: none;
+}
+

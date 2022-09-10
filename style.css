@@ -1,430 +1,242 @@
-/* ⊹ ۪𔘓 — — — Tipografia — —— —  — — */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mukta:wght@300&family=Playfair+Display&family=Raleway:wght@200&display=swap');
-
-
-/* ⊹ ۪𔘓 — — — Body — —— —  — — */
-* { 
-  margin: 0; 
-  padding: 0; 
+            /* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway:wght@200&family=Tiro+Devanagari+Hindi&display=swap');
+             
+           /* Body da página */
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body
+{
+  background-image: url(/Images/fundo3.jpg);
+  background-repeat: repeat-y;
+  background-position: right;
+}
 
-/* ⊹ ۪𔘓 — — — Header — —— —  — — */
+        /* Header - o cabeçalho */
 header
 {
-  position: relative;
-  top: 10px;
-  left: 20px;
-  display: inline;
+  background-image: url(/Images/fundo_cab.jpg);
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
+header img
+{
+  float: left;
+  margin-top: 5px; /* Distância de cima*/
+  margin-left: 8px; /* Distância da esquerda*/
 }
 
 header h1
 {
   position: relative;
-  top: -20px;
-  font-size: 60px;
+  top: 30px;
   font-family: 'Josefin Sans', sans-serif;
-  color: red;
-  display: inline;
-  background-image: url(/Images/fundo_cab.jpg);
-}
-
-
-/* ⊹ ۪𔘓 — — — NavBar — —— —  — — */
-section
-{
-  position: relative;
-  top: 570px;
-  left: 230px;
-  transform: scale(1.5);
-}
-
-nav
-{
-  position: relative;
-  top: -55px;
-  left: 100px;
-  display: flex;
-  transform: scale(1.06);
-}
-
-nav li, a, span
-{
-  position: relative;
-  top: 40px;
-  display: block;
-  float: left;
-  color: black;
-  font-family: 'Josefin Sans', sans-serif;
-  list-style: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-decoration: none;
-}
-
-
-  /* Subtítulo invisível sem o :hover */
-nav li ul a
-{
-  display: none;
-}
-
-nav li span, ul li a
-{
-  font-size: 15px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: pink;
-  padding: 5px 55px;
-}
-
-
-               /* Aside */
-aside
-{
-  position: relative;
-  top: 40px;
-  left: 47px;
-  float: right;
-  border: 2px solid hotpink;
-  border-style: dotted;
-  padding: 74px 20px;
-}
-
-aside h1
-{
-  position: relative;
-  top: -75px;
-  width: 100%;
-  color: white;
-  Background-color: black;
-  background-size: 100%;
-}
-
-aside img
-{
-  position: relative;
-  top: -30px;
-  left: 5px;
-  display: flex;
-  padding: 9px;
-}
-
-
-/* Aside Opções */
-
-hr
-{
-  position: relative;
-  top: 55px;
-  left: 120px;
-  background-color: pink;
-  width: 60%;
-}
-
-.Destaque h1, .Destaque img
-{
-  position: relative;
-  top: 40px;
-  left: 100px;
-  display: inline;
+  color: #695B58;
   font-size: 40px;
+  text-indent: 10px; /* Espaçamento do texto de algum elemento*/
+  animation: bg 4s infinite;
+}
+
+@keyframes bg {
+  50% {
+    color: #3E3232;
+  }
+}
+
+              /* Rodapé */
+footer p
+{
+  margin-top: -614px;
+  width: 800px;
+  background-color: #B392AC;
   font-family: 'Josefin Sans', sans-serif;
+  color: #FFFFFF;
+  text-indent: 180px;
 }
 
-.Destaque h1
+          /* Destaque Livraria */
+.Destaque-Livraria
 {
-  position: relative;
-  top: 32px;
-  left: 128px;
+  border-bottom: 1px solid #C69898;
+  width: 330px;
+  margin-left: 150px;
+  top: -250px;
 }
 
-/* Livro um */
-#Livro-1 img
+.Destaque-Livraria h2
 {
-  position: relative;
-  top: 80px;
-  left: 150px;
+  position: absolute;
+  font-size: 40px;
+  margin-top: 51px;
+  text-indent: 20px;
+  display: inline;
+  padding-bottom: 50px;
+  font-family: 'Tiro Devanagari Hindi', serif;
+  color: #B392AC;
 }
 
-#Livro-1 h1
+.Destaque-Livraria img
+{
+  display: inline;
+  margin-top: 50px;
+  margin-left: 0;
+  padding-bottom: 10px;
+}
+
+
+             /* Tabela */
+table
 {
   position: relative;
-  top: 90px;
-  left: 155px;
-  display: block;
+  margin-top: 40px;
+  margin-left: 200px;
+  transform: scale(1.1);
+}
+
+table #titulo-do-livro
+{
+  font-size: 12px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
+  color: #5F5454;
+  text-align: center;
+  display: block;
 }
 
-#comprar
+table #valor-do-livro
 {
   display: block;
-  margin: 1px 20px;
-  pointer: cursor;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: 0.6s;
-}
-
-#comprar:hover
-{
-  filter: sepia(60%);
-}
-
-#Livro-1 p
-{
-  position: relative;
-  top: 90px;
-  left: 200px;
-  display: block
-}
-
-/* Livro-2 */
-#Livro-2
-{
-  position: relative;
-  top: -325px;
-  left: 220px;
-}
-
-#Livro-2 img
-{
-  position: relative;
-  top: 80px;
-  left: 150px;
-}
-
-#Livro-2 h1
-{
-  position: relative;
-  top: 90px;
-  left: 155px;
-  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #B392AC;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
+  margin-top: 4px;
+  font-weight: bold;
 }
 
-#comprar
+table .destaque4
 {
+  height: 165px;
+}
+
+table .destaque6
+{
+  top: -2px;
+  height: 165px;
+}
+
+table tr td
+{
+  padding: 10px;
+}
+
+table td
+{
+  border-bottom-style: dotted;
+  padding: -29px;
+  color: #C6C6C6;
+}
+
+.comprar 
+{
+  position: relative;
+  left: 18px;
+  animation: 0.6s;
+  cursor: pointer;
+}
+
+.comprar:hover
+{
+  filter: sepia(0.9);
+}
+
+
+             /* Top 5*/
+#menu-direito
+{
+  position: relative;
+  top: -599px;
+  left: -180px;
+  float: right;
+  border-left: 2px dotted #C69898;
+  border-right: 2px dotted #C69898;
+  height: 738px;
+}
+
+#menu-direito img 
+{
+  position: relative;
+  left: 25px;
   display: block;
-  margin: 1px 20px;
-  pointer: cursor;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: 0.6s;
+  padding: 5px;
+  margin-top: 1px;
 }
 
-#comprar:hover
+#menu-direito h1
 {
-  filter: sepia(60%);
-}
-
-#Livro-2 p
-{
-  position: relative;
-  top: 90px;
-  left: 200px;
-  display: block
+  background-color: #B28C8C;
+  text-align: center;
+  color: white;
+  width: 140px;
 }
 
 
-/* Livro-3 */
-#Livro-3
+              /* Menu */
+#menu-esquerdo
 {
   position: relative;
-  top: -650px;
-  left: 440px;
+  top: -599px;
+  background-color: #715D5D;
+  width: 137px;
+  height: 750px;
 }
 
-#Livro-3 img
+#menu-esquerdo h1
 {
-  position: relative;
-  top: 80px;
-  left: 150px;
+  background-color: #715D5D;
+  text-align: center;
+  color: white;
+  width: 137px;
+  top: -100px;
 }
 
-#Livro-3 h1
+#menu-esquerdo a
 {
   position: relative;
-  top: 90px;
-  left: 169px;
-  display: block;
+  text-indent: 9px;
+  text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
+  color: #000000;
+  font-size: 12px;
+  cursor: pointer;
+  animation: 0.6s;
 }
 
-#comprar
+#menu-esquerdo li 
 {
-  display: block;
-  margin: 1px 20px;
-  pointer: cursor;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: 0.6s;
+  list-style: url(/Images/seta_menu.gif);
+  background-color: #C1A3A3;
+  border-bottom-style: solid;
+  border-bottom-color: #827777;
+  color: white;
+  padding: 9px;
+  width: 119px;
+  height: 20px;
+  cursor: pointer;
+  animation: 0.6s;
 }
 
-#comprar:hover
+#menu-esquerdo li:hover
 {
-  filter: sepia(60%);
+  background-color: #B392AC;
+  padding: 9px;
+  width: 119px;
+  height: 20px;
 }
 
-#Livro-3 p
+#menu-esquerdo li a
 {
-  position: relative;
-  top: 90px;
-  left: 200px;
-  display: block
-}
-
-/* Livro 4 */
-#Livro-4
-{
-  position: relative;
-  top: -620px;
-  display: block;
-}
-
-#destaque-4
-{
-  width: 17.3%;
-  height: 254px;
-}
-
-#Livro-4 img
-{
-  position: relative;
-  top: 90px;
-  left: 150px;
-}
-
-#Livro-4 h1
-{
-  position: relative;
-  top: 100px;
-  left: 210px;
-  display: block;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-}
-
-#comprar
-{
-  display: block;
-  margin: 1px 20px;
-  pointer: cursor;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: 0.6s;
-}
-
-#comprar:hover
-{
-  filter: sepia(60%);
-}
-
-#Livro-4 p
-{
-  position: relative;
-  top: 100px;
-  left: 200px;
-  display: block
-}
-
-
-/* Livros 5 */
-#Livro-5
-{
-  position: relative;
-  top: -325px;
-  left: 220px;
-}
-
-#Livro-5 img
-{
-  position: relative;
-  top: 80px;
-  left: 150px;
-}
-
-#Livro-5 h1
-{
-  position: relative;
-  top: 90px;
-  left: 195px;
-  display: block;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-}
-
-#comprar
-{
-  display: block;
-  margin: 1px 20px;
-  pointer: cursor;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: 0.6s;
-}
-
-#comprar:hover
-{
-  filter: sepia(60%);
-}
-
-#Livro-5 p
-{
-  position: relative;
-  top: 90px;
-  left: 200px;
-  display: block
-}
-
-
-/* Livro 6*/
-#Livro-6
-{
-  position: relative;
-  top: -325px;
-  left: 220px;
-}
-
-#Livro-6 img
-{
-  position: relative;
-  top: 80px;
-  left: 150px;
-}
-
-#Livro-6 h1
-{
-  position: relative;
-  top: 90px;
-  left: 165px;
-  display: block;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-}
-
-#comprar
-{
-  display: block;
-  margin: 1px 20px;
-  pointer: cursor;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: 0.6s;
-}
-
-#comprar:hover
-{
-  filter: sepia(60%);
-}
-
-#Livro-6 p
-{
-  position: relative;
-  top: 90px;
-  left: 200px;
-  display: block
-}
-
-.livros
-{
-  position: relative;
-  left: 50px;
+  top: -13px;
 }
